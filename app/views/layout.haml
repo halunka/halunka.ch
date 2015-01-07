@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %script{:src => "//use.typekit.net/mrh3npl.js"}
+    :javascript
+      try{Typekit.load();}catch(e){}
+    %title
+      "halunka - " :title
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/reset.css"}
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/main.css"}
+    
+  %body
+    = yield

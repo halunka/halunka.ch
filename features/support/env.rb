@@ -2,20 +2,20 @@
 
 ENV['RACK_ENV'] = 'test'
 
-require File.join(File.dirname(__FILE__), '..', '..', 'app/halunka.rb')
+require File.join(File.dirname(__FILE__), '..', '..', 'app/server.rb')
 
 require 'capybara'
 require 'capybara/cucumber'
 require 'rspec'
 
-Capybara.app = halunka
+Capybara.app = HK
 
-class halunkaWorld
+class HKWorld
   include Capybara::DSL
   include RSpec::Expectations
   include RSpec::Matchers
 end
 
 World do
-  halunkaWorld.new
+  HKWorld.new
 end
