@@ -12,7 +12,7 @@ class HK < Sinatra::Base
   use Rack::Flash
 
   get '/' do
-    haml :index
+    haml :index, :locals => {:title => 'Welcome'}
   end
 
   # start the server if ruby file executed directly

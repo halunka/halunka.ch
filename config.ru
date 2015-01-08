@@ -1,3 +1,3 @@
 require './app/server'
 
-run BDB
+run HK

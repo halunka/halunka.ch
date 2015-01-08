@@ -1,13 +1,16 @@
 !!!
 %html
   %head
-    %script{:src => "//use.typekit.net/mrh3npl.js"}
+    %script{:src => "//use.typekit.net/omu8ach.js"}
     :javascript
       try{Typekit.load();}catch(e){}
     %title
-      "halunka - " :title
+      halunka -
+      = title
     %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/reset.css"}
     %link{:rel => :stylesheet, :type => :"text/css", :href => "/css/main.css"}
-    
+ 
   %body
+    = haml :nav
     = yield
+  %script{:src => "/js/interface.js"}
