@@ -44,6 +44,21 @@ header {
 
 }
 
+.logo {
+
+  z-index: 20;
+  position: absolute;
+  background-image: url("../img/logo.svg");
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  left: 2rem;
+  top: 2rem;
+
+}
+
 main {
 
   background-color: rgb(242, 242, 242);
@@ -118,7 +133,7 @@ nav {
   padding: 0;
   list-style: none;
   z-index: 10;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(200, 200, 200);
   transform: translateX(100vw);
   transition: transform .2s;
   
@@ -162,7 +177,22 @@ nav {
   background-repeat: no-repeat;
   background-size: 100% auto;
   right: 2rem;
-  top: 2rem;
+  top: 3rem;
+
+}
+
+.main-nav__show {
+
+  float: right;
+  position: absolute;
+  background-image: url("../img/btn_nav.svg");
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  right: 2rem;
+  top: 4rem;
 
 }
   
@@ -174,3 +204,17 @@ ul h2 {
 
 }
 
+/* ---------------------------------
+    Main
+--------------------------------- */
+
+p {
+
+  font-weight: 300;
+  font-size: 4em;
+  letter-spacing: 0.2em;
+  width: 50vw;
+  text-align: center;
+  margin: 10rem auto;
+
+}
