@@ -208,7 +208,7 @@ ul h2 {
     Main
 --------------------------------- */
 
-p {
+h3 {
 
   font-weight: 300;
   font-size: 4em;
@@ -218,3 +218,26 @@ p {
   margin: 10rem auto;
 
 }
+
+h2 {
+
+  font-size: 1.2em;
+
+}
+
+p {
+
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  width: 50vw;
+  text-align: left;
+  margin: 1rem auto;
+
+}
+
+
+/* ---------------------------------
+    About
+--------------------------------- */

@@ -15,6 +15,10 @@ class HK < Sinatra::Base
     haml :index, :locals => {:title => 'Welcome'}
   end
 
+  get '/about' do
+    haml :about, :locals => {:title => 'About'}
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end
