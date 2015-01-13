@@ -1,7 +1,5 @@
 require 'sinatra'
-require 'data_mapper'
 require 'haml'
-require 'rack-flash'
 
 class HK < Sinatra::Base
 
@@ -9,7 +7,6 @@ class HK < Sinatra::Base
 	set :public_dir, settings.root + '/public/'
   set :session_secret, 'ooc-woox-rom-ac'
 	enable :sessions
-  use Rack::Flash
 
   get '/' do
     haml :index, :locals => {:title => 'Welcome'}
