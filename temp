@@ -1,0 +1,4 @@
+cat << '__EOF__' >>  ~/.bash_profile
+export PATH=/package/host/localhost/ruby-2.2.0/bin:$PATH
+export PATH=$HOME/.gem/ruby/2.2.0/bin:$PATH
+__EOF__
