@@ -1,3 +1,3 @@
-require './app/server'
+require './app/server.rb'
 
 run HK
