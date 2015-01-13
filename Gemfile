@@ -1,11 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.2.0'
+ruby '2.1.2'
 
 gem 'sinatra'
 gem 'haml'
-gem 'pg'
-gem 'data_mapper'
-gem 'dm-postgres-adapter'
 
 group :development, :test do
 	gem 'capybara'
@@ -13,8 +10,4 @@ group :development, :test do
 	gem 'cucumber-sinatra'
 	gem 'launchy'
 	gem 'rspec'
-	gem 'bcrypt-ruby'
-	gem 'rack-flash3'
-	gem 'database_cleaner'
-	gem 'compass'
 end
