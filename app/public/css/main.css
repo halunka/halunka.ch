@@ -167,7 +167,7 @@ nav {
 
 .main-nav__hide {
 
-  z-index: 20;
+  z-index: 9;
   float: right;
   position: absolute;
   background-image: url("../img/btn_hide_nav.svg");
@@ -231,7 +231,7 @@ p {
   font-size: 1em;
   line-height: 1.5em;
   letter-spacing: 0.1em;
-  width: 50vw;
+  width: 80vw;
   text-align: left;
   margin: 1rem auto;
 
