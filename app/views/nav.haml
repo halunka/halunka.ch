@@ -1,5 +1,20 @@
 %header
-  %nav{:class => "main-nav"}
+  %nav{:id => "desktop"}
+    %ul
+      %li{:class => "main-nav-desktop"}
+        %a{:class => "nav-desktop"}
+          home
+      %li{:class => "main-nav-desktop"}
+        %a{:class => "nav-desktop"}
+          work
+      %li{:class => "main-nav-desktop"}
+        %a{:class => "nav-desktop"}
+          about
+      %li{:class => "main-nav-desktop"}
+        %a{:class => "nav-desktop"}
+          contact
+
+  %nav{:class => "main-nav", :id => "mobile"}
     %a{:id => "main-nav__show", :class => "main-nav__show", :href => "#"}
 
     %ul{:class => "main-nav__list"}

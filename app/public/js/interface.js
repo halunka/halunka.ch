@@ -1,6 +1,7 @@
 window.addEventListener('load', function() {
 
   toggleNav.init();
+  activeNavElement.init();
 
 }, false);
 
@@ -31,5 +32,4 @@ toggleNav.toggle = function() {
     this.mainNav.className = this.mainNav.className.replace(' ' + this.toggleClass, '');
   };
   this.state = !this.state;
-
 };

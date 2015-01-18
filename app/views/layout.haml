@@ -13,6 +13,7 @@
     %meta{:name => :viewport, :content => "width=device-width, initial-scale=1"}
  
   %body
-    = haml :nav
+    %header{:class => :"wrapper"}
+      = haml :nav
     = yield
   %script{:src => "/js/interface.js"}

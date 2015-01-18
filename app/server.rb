@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'haml'
+require 'pony'
 
 class HK < Sinatra::Base
 
@@ -19,6 +20,14 @@ class HK < Sinatra::Base
   get '/contact' do
     haml :contact, :locals => {:title => 'Contact'}
   end
+
+  post '/contact' do
+    name = #{params[:name]}
+    surname = #{params[:name]}
+    mail = #{params[:mail]}
+    message = #{params[:body]}     
+    Pony.mail(:to => 'mail@halunka.ch', :from => mail, :subject => 'Contact Form halunka.ch' + name + surname, :body => body) 
+    end
 
   # start the server if ruby file executed directly
   run! if app_file == $0
