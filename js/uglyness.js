@@ -1,8 +1,8 @@
 däHalunk = Object.create(Halunka)
-däHalunk.config.containerSelector = function () {
-  return document.querySelector('.halunkaContainer')
-}
+däHalunk.config.width = innerWidth
+däHalunk.config.height = innerHeight
 
 addEventListener('load', function () {
+  document.body.appendChild(däHalunk.getCanvas())
   däHalunk.init()
 })
