@@ -1,3 +1,12 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 html,
 body {
   padding: 0;
@@ -9,8 +18,37 @@ body {
   width: 100vw;
 }
 
-main {
+input,
+textarea {
   display: block;
+  float: left;
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  padding: 0 .5rem;
+  margin: .25rem 0;
+  line-height: 1.5rem;
+}
+
+input {
+  line-height: 2rem;
+}
+
+input[type=submit] {
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+  margin: .75rem 0;
+  min-height: 12rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 100vh;
 }
@@ -19,4 +57,46 @@ main {
   width: 100vw;
   max-width: 100vh;
   max-height: 100vh;
+}
+
+.mailForm {
+  position: absolute;
+  z-index: 2;
+  top: 5vw;
+  left: 5vw;
+  width: 90vw;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px #000;
+}
+
+.mailForm__close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0,50%,50%,.2);
+}
+
+.mailForm__title {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.mailForm__address {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.contactLink {
+  display: block;
+  align-self: center;
+  padding: .5rem 1rem;
+  margin-bottom: 2rem;
+  background-color: hsl(0,50%,40%);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
 }

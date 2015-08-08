@@ -1,10 +1,9 @@
 <template name="mailForm">
-  <p>hi</p>
   {{ #if showForm }}
     <a href="#" class="mailForm__close"></a>
     <form class="mailForm">
-      <input type="text" name="from" placeholder="My.Email@Address.com">
-      <input type="text" name="title" placeholder="Hi!">
+      <input type="text" name="title" placeholder="Hi!" class="mailForm__title">
+      <input type="text" name="from" placeholder="My.Email@Address.com" class="mailForm__address">
       <textarea name="text" placeholder="I'd like to meet you"></textarea>
       <input name="submit" type="submit">
     </form>
