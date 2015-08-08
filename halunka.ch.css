@@ -4,8 +4,19 @@ body {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 100vh;
+}
+
 .logo {
-  min-width: 100vw;
-  max-width: 100vw;
+  width: 100vw;
+  max-width: 100vh;
   max-height: 100vh;
 }
