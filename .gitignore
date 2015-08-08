@@ -7,5 +7,5 @@ Session.vim
 *~
 
 ## Meteor
-packages
-.demeteorized
+packages/
+.demeteorized/
