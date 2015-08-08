@@ -17,7 +17,7 @@ RUN apt-get install -yqq nodejs
 ADD ./.demeteorized /var/app
 WORKDIR /var/app
 
-ENV ROOT_URL='http://kriegslustig.me'
+ENV ROOT_URL='http://halunka.ch'
 ENV PORT=80
 ENV SETTINGS_FILE='settings.json'
 
