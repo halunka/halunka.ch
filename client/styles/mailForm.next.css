@@ -18,7 +18,10 @@
   padding: .5rem 1rem 1rem 1rem;
   background-color: #fff;
   border: .6rem solid #000;
-  transition: background-color .2s;
+  transition:
+    background-color .2s,
+    top .2s,
+    opacity .2s;
 }
 
 .mailForm--loading {
