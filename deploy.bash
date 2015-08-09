@@ -5,6 +5,7 @@ project_name=halunka_ch
 cd /var/docker/halunka.ch && \
 git pull && \
 demeteorizer && \
+cp settings.json .demeteorized/ && \
 docker build -t ${project_name} . && \
 docker stop ${project_name} && \
 docker rm ${project_name} && \
