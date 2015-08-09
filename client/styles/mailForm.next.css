@@ -67,12 +67,12 @@
   line-height: 2.6rem;
 }
 
-form [class$=--invalid] {
+[class$="--invalid"] {
   border-color: hsl(0,50%,69%);
   border-width: .2rem;
 }
 
-[class$=--invalid] ~ .mailForm__send {
+[class$="--invalid"] ~ .mailForm__send {
   color: hsl(0,0%,60%);
   border-color: hsl(0,0%,60%);
 }
