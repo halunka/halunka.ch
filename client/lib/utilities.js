@@ -4,3 +4,10 @@ extractData = function extractData (elem) {
       return [element.name, element.value]
     }))
 }
+
+getForm = function getForm (element) {
+  if(!element) return false
+  return element.tagName == 'FORM' ?
+    element:
+    getForm(element.parentNode)
+}

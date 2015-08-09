@@ -1,7 +1,7 @@
 Meteor.methods({
   greetUs: function (sender, title, message) {
     check([sender, title, message], [String])
-    if(!/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(sender)) throw 'Invalid email address'
+    if(!isEMailAddress(sender)) throw 'Invalid email address'
     Emails.insert({
       from: sender,
       title: title,

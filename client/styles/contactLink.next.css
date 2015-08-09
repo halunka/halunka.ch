@@ -1,0 +1,23 @@
+.contactLink {
+  display: block;
+  align-self: center;
+  padding: .6rem .6rem;
+  margin-bottom: 2rem;
+  border: 0 solid #000;
+  background-color: hsl(0,0%,100%);
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  transition:
+    border .2s,
+    padding .2s;
+}
+
+.contactLink:hover {
+  padding: .5rem .6rem;
+  border-width: .2rem;
+}

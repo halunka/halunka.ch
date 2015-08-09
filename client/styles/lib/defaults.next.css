@@ -1,0 +1,105 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 100vh;
+}
+
+h1 {
+  line-height: 2.5rem;
+  font-size: 2rem;
+}
+
+h2 {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+input,
+textarea {
+  display: block;
+  float: left;
+  width: 100%;
+  font: inherit;
+  border: none;
+  outline: none;
+  padding: 0 .5rem;
+  margin: .25rem 0;
+  line-height: 1.5rem;
+  transition: box-shadow .2s;
+  background-color: transparent;
+}
+
+input {
+  line-height: 2rem;
+}
+
+input[type=submit] {
+  padding: 0;
+  width: 6rem;
+  height: 2.2rem;
+  margin-top: 1rem;
+  border: 0 solid #000;
+  line-height: 2rem;
+  text-decoration: underline;
+  transition:
+    border .2s,
+    line-height .2s,
+    color .2s;
+}
+
+input[type=submit]:focus,
+input[type=submit]:hover {
+  border-width: .2rem;
+  line-height: 1.8rem;
+}
+
+input[type=text] {
+  border-bottom: 0 solid #000;
+  transition:
+    border-bottom .2s,
+    line-height.2s;
+}
+
+input[type=text]:focus {
+  border-width: .2rem;
+}
+
+textarea {
+  resize: none;
+  margin: .75rem 0;
+  padding: .4rem;
+  min-height: 12rem;
+  transition: border .2s;
+  border: 0 solid #000;
+}
+
+textarea:focus {
+  border-width: .2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}

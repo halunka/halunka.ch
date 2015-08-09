@@ -14,5 +14,5 @@
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(JosefinSans-Bold.woff2) format('woff2'), url(/fonts/JosefinSans-Bold.woff) format('woff');
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(/fonts/JosefinSans-Bold.woff2) format('woff2'), url(/fonts/JosefinSans-Bold.woff) format('woff');
 }
