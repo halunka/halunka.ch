@@ -32,9 +32,10 @@ Template.mailForm.events({
           message('Failed to send message :(. Please try later.')
         } else {
           message('Thanks for your message, we\'ll send you an answer ASAP :)')
+          location.href = '#'
+          clearForm(form)
         }
         loader.stop()
-        location.href = '#'
       }
     )
   },

@@ -11,3 +11,12 @@ getForm = function getForm (element) {
     element:
     getForm(element.parentNode)
 }
+
+clearForm = function (form) {
+  return [].slice.call(form.querySelectorAll('input, textarea'))
+    .map(function (element) {
+      if(element.type == 'submit') return
+      if(element.value) element.value = ''
+      return element.name
+    })
+}

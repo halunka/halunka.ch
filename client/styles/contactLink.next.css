@@ -1,7 +1,9 @@
 .contactLink {
   display: block;
   align-self: center;
-  padding: .6rem .6rem;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  padding: 0 .6rem;
   margin-bottom: 2rem;
   border: 0 solid #000;
   background-color: hsl(0,0%,100%);
@@ -14,10 +16,10 @@
   text-decoration: underline;
   transition:
     border .2s,
-    padding .2s;
+    line-height .2s;
 }
 
 .contactLink:hover {
-  padding: .5rem .6rem;
+  line-height: 1.9rem;
   border-width: .2rem;
 }
