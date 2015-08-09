@@ -20,6 +20,7 @@ body {
 }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -50,6 +51,7 @@ textarea {
   line-height: 1.5rem;
   transition: box-shadow .2s;
   background-color: transparent;
+  border-radius: 0;
 }
 
 input {
