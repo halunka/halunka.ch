@@ -67,7 +67,7 @@
   line-height: 2.6rem;
 }
 
-[class$="--invalid"] {
+form [class$="--invalid"] {
   border-color: hsl(0,50%,69%);
   border-width: .2rem;
 }
