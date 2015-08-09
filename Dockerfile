@@ -20,6 +20,7 @@ WORKDIR /var/app
 ENV ROOT_URL='http://halunka.ch'
 ENV PORT=80
 ENV SETTINGS_FILE='settings.json'
+ENV MAIL_URL='smtp://postmaster@mg.halunka.ch:c9514ae0fc93a7d532d19e8c049ab1fb@smtp.mailgun.org'
 
 RUN npm i
 
