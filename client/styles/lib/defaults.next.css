@@ -56,26 +56,6 @@ input {
   line-height: 2rem;
 }
 
-input[type=submit] {
-  padding: 0;
-  width: 6rem;
-  height: 2.2rem;
-  margin-top: 1rem;
-  border: 0 solid #000;
-  line-height: 2rem;
-  text-decoration: underline;
-  transition:
-    border .2s,
-    line-height .2s,
-    color .2s;
-}
-
-input[type=submit]:focus,
-input[type=submit]:hover {
-  border-width: .2rem;
-  line-height: 1.8rem;
-}
-
 input[type=text] {
   border-bottom: 0 solid #000;
   transition:
