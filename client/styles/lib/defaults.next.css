@@ -26,6 +26,7 @@ main {
   margin: 0 auto;
   padding: 2rem;
   max-width: 100vh;
+  min-height: 100vh;
 }
 
 h1 {
