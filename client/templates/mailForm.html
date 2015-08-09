@@ -1,11 +1,9 @@
 <template name="mailForm">
-  {{ #if showForm }}
-    <a href="#" class="mailForm__close"></a>
-    <form class="mailForm">
-      <input type="text" name="title" placeholder="Hi!" class="mailForm__title">
-      <input type="text" name="from" placeholder="My.Email@Address.com" class="mailForm__address">
-      <textarea name="text" placeholder="I'd like to meet you"></textarea>
-      <input name="submit" type="submit">
-    </form>
-  {{ /if }}
+  <a href="#" class="mailForm__close{{ #if not showForm }} mailForm--hidden__close{{ /if }}"></a>
+  <form class="mailForm{{ #if not showForm }} mailForm--hidden{{ /if }}">
+    <input type="text" name="title" placeholder="Hi!" class="mailForm__title">
+    <textarea name="text" placeholder="I'd like to meet you"></textarea>
+    <input type="text" name="from" placeholder="My.Email@Address.com" class="mailForm__address">
+    <input name="submit" type="submit" value="send">
+  </form>
 </template>
