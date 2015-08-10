@@ -2,41 +2,42 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   font-size: 20px;
   font-weight: 800;
   font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-html,
 body {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  overflow-x: hidden;
-  width: 100vw;
+  position: relative;
 }
 
 main {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 2rem;
-  max-width: 100vh;
+  max-width: var(--mainWidth);
   min-height: 100vh;
 }
 
 h1 {
   line-height: 2.5rem;
   font-size: 2rem;
+  margin: 1rem 0;
 }
 
 h2 {
   line-height: 2rem;
   font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 input,
@@ -85,4 +86,11 @@ textarea:focus {
 
 button:hover {
   cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
 }

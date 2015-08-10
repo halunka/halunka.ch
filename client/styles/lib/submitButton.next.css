@@ -1,0 +1,33 @@
+:root {
+  --submitButtonHeight: 3rem;
+  --submitButtonDektopHeight: 3.5rem;
+}
+
+.submitButton {
+  padding: 0 1rem;
+  height: var(--submitButtonHeight);
+  border: 0 solid #000;
+  line-height: var(--submitButtonHeight);
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: #000;
+  text-decoration: none;
+  transition:
+    border .2s,
+    line-height .2s,
+    color .2s;
+}
+
+.submitButton:focus,
+.submitButton:hover {
+  border-width: .2rem;
+}
+
+
+@media (min-width: 600px) {
+  .submitButton {
+    height: var(--submitButtonDektopHeight);
+    line-height: var(--submitButtonDektopHeight);
+    font-size: 2rem;
+  }
+}

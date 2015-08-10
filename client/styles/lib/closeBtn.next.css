@@ -26,3 +26,7 @@
 .closeBtn:after {
   transform: rotate(-45deg);
 }
+
+.closeBtn:hover {
+  cursor: pointer;
+}

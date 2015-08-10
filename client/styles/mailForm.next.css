@@ -46,27 +46,6 @@
   line-height: 2rem;
 }
 
-.mailForm__send {
-  padding: 0;
-  width: 5rem;
-  height: 3rem;
-  margin-top: 1rem;
-  border: 0 solid #000;
-  line-height: 2.8rem;
-  font-size: 1.5rem;
-  text-decoration: underline;
-  transition:
-    border .2s,
-    line-height .2s,
-    color .2s;
-}
-
-.mailForm__send:focus,
-.mailForm__send:hover {
-  border-width: .2rem;
-  line-height: 2.6rem;
-}
-
 form [class$="--invalid"] {
   border-color: hsl(0,50%,69%);
   border-width: .2rem;
@@ -105,13 +84,6 @@ form [class$="--invalid"] {
   .mailForm__close {
     top: 1rem;
     right: 1rem;
-  }
-
-  .mailForm__send {
-    height: 3.5rem;
-    width: 6rem;
-    line-height: 3.1rem;
-    font-size: 2rem;
   }
 
   .mailForm__send:focus,

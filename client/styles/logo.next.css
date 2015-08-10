@@ -1,5 +1,4 @@
 .logo {
   width: calc(100vw - 4rem);
-  max-width: calc(100vh - 2rem);
-  max-height: calc(100vh - 2rem);
+  max-width: calc(var(--mainWidth) - 2rem);
 }
