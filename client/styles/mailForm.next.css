@@ -51,6 +51,12 @@ form [class$="--invalid"] {
   border-width: .2rem;
 }
 
+.mailForm__send {
+  align-self: center;
+  margin-top: 1rem;
+  max-width: 8rem;
+}
+
 [class$="--invalid"] ~ .mailForm__send {
   color: hsl(0,0%,60%);
   border-color: hsl(0,0%,60%);
@@ -84,12 +90,6 @@ form [class$="--invalid"] {
   .mailForm__close {
     top: 1rem;
     right: 1rem;
-  }
-
-  .mailForm__send:focus,
-  .mailForm__send:hover {
-    border-width: .2rem;
-    line-height: 2.9rem;
   }
 
 }
