@@ -29,7 +29,11 @@ Template.mailForm.events({
       function (err, data) {
         if (err) {
           console.error(err)
-          message('Failed to send message :(. Please try later.')
+          if(err.reason) {
+            message('Failed to send message :( ' + err.reason)
+          } else {
+            message('Failed to send message :(. Please try later.')
+          }
         } else {
           message('Thanks for your message, we\'ll send you an answer ASAP :)')
           location.href = '#'
