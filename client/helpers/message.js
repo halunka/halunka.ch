@@ -7,15 +7,20 @@ message = function (text, type) {
     },
     document.body
   )
-  function display () {
-    var node = view.firstNode()
-    node.className = node.className.replace('message--hidden', '')
-  }
-  setTimeout(display, 200)
+  setTimeout(display.bind(null, view.firstNode()), 200)
 }
 
 Template.message.events({
-  'click .message__close': function (e) {
-    document.body.removeChild(e.currentTarget.parentNode)
+  'click .message__close': function (e, templ) {
+    unDisplay(templ.view.firstNode())
+    setTimeout(document.body.removeChild.bind(document.body, e.currentTarget.parentNode), 200)
   }
 })
+
+function display (node) {
+  node.className = node.className.replace('message--hidden', '')
+}
+
+function unDisplay (node) {
+  node.className += ' message--hidden'
+}
