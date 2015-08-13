@@ -1,6 +1,6 @@
 <template name="message">
-  <output class="message">
-    <button class="closeBtn message__close"></button>
+  <output class="message message--hidden message--{{ type }}">
+    <button class="closeBtn message__close message--{{ type }}__close"></button>
     <h2>{{ text }}</h2>
   </output>
 </template>

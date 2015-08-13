@@ -1,11 +1,17 @@
-message = function (text) {
-  Blaze.renderWithData(
+message = function (text, type) {
+  var view = Blaze.renderWithData(
     Template.message,
     {
-      text: text
+      text: text,
+      type: type || 'neutral'
     },
     document.body
   )
+  function display () {
+    var node = view.firstNode()
+    node.className = node.className.replace('message--hidden', '')
+  }
+  setTimeout(display, 200)
 }
 
 Template.message.events({
