@@ -22,10 +22,6 @@
   height: 100%;
 }
 
-.logo__innerTrs {
-  transform: rotateZ(2px);
-}
-
 .logo__text,
 .logo__innerTrs {
   left: 0;
