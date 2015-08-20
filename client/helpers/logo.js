@@ -4,7 +4,7 @@ Template.logo.onRendered(function () {
     _.debounce(logoMover(
       [
         [document.querySelector('.logo'), 'rotateZ(2deg)', 1],
-        [document.querySelector('.logo__innerTrs'), '', 1.5]
+        [document.querySelector('.logo__innerTrs'), '', 1.6]
       ]
     ), 10)
   )
@@ -37,21 +37,34 @@ function getPos (pos, len) {
 
 function rotator (elem, def, dir) {
   var prop = ['rotate', prop].join('')
-  var curr = {
-    x: 0,
-    y: 0
-  }
+  var curr = [
+    0,
+    0
+  ]
   return function (newX, newY) {
-    curr.x = newX
-    curr.y = newY
-    elem.style.transform =
-      [
-        def,
-        ['rotateY(', 'deg)']
-          .join(curr.y),
-        ['rotateX(', 'deg)']
-          .join(curr.x)
-      ]
-        .join(' ')
+    var step = [
+      (newX - curr[0]) / 3,
+      (newY - curr[1]) / 3
+    ]
+    _.zip(
+      _.range(curr[0], newX, step[0]),
+      _.range(curr[1], newY, step[1])
+    ).forEach(function (step, i) {
+      step[0] = step[0] || newX
+      step[1] = step[1] || newY
+      setTimeout(function () {
+        elem.style.transform =
+          [
+            def,
+            ['rotateY(', 'deg)']
+              .join(step[0]),
+            ['rotateX(', 'deg)']
+              .join(step[1])
+          ]
+            .join(' ')
+      }, 10 * i)
+    })
+    curr[0] = newX
+    curr[1] = newY
   }
 }
