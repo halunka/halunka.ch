@@ -24,9 +24,13 @@
 
 .logo__text,
 .logo__innerTrs {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  left: 5%;
+  top: 5%;
+  height: 90%;
+  width: 90%;
   position: absolute;
+}
+
+.logo__innerTrs {
+  transform: translateZ(14px) rotateY(0deg);
 }
