@@ -17,7 +17,7 @@ Template.logo.onRendered(function () {
   })
   var mouseRotator = _.debounce(logoMover(
     [
-      [document.querySelector('.logo'), 'rotateZ(2deg)', 1, 1, true],
+      [document.querySelector('.logo'), 'rotateZ(2deg)', 0.6, 0.6, true],
       [document.querySelector('.logo__innerTrs'), 'translateZ(14px)', 1.6, 1.6, true],
     ]
   ), 10)
