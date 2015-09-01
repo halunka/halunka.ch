@@ -14,6 +14,7 @@
   height: calc(100vw - 4rem);
   max-height: calc(var(--mainWidth) - 2rem);
   perspective: 100px;
+  margin-bottom: 2rem;
 }
 
 .logo__inner {
