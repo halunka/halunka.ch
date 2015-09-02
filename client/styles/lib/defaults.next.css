@@ -7,12 +7,12 @@ body,
 h1, h2 {
   padding: 0;
   margin: 0;
+  font-weight: 300;
 }
 
 html {
   font-size: 20px;
-  font-weight: 800;
-  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Effra', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 body {
@@ -45,6 +45,10 @@ p {
   margin: 0;
   font-size: 1.1rem;
   line-height: 2rem;
+}
+
+b {
+  font-weight: 600;
 }
 
 input,
