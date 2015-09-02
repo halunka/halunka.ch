@@ -9,7 +9,7 @@
   box-sizing: content-box;
   padding: 1px 2rem;
   height: var(--submitButtonHeight);
-  line-height: var(--submitButtonHeight) + 0.2rem);
+  line-height: var(--submitButtonHeight);
   border: 1px solid #fff;
   font-size: 1.5rem;
   color: #000;
