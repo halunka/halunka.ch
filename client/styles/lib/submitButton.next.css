@@ -1,13 +1,13 @@
 :root {
-  --submitButtonHeight: 3rem;
-  --submitButtonDektopHeight: 3.5rem;
+  --submitButtonHeight: 3.2rem;
+  --submitButtonDektopHeight: 4.2rem;
 }
 
 .submitButton {
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: var(--submitButtonHeight);
   border: 0 solid #000;
-  line-height: calc(var(--submitButtonHeight) + .2rem);
+  line-height: calc(var(--submitButtonHeight) + 0.2rem);
   font-size: 1.5rem;
   text-decoration: underline;
   color: #000;
@@ -20,21 +20,21 @@
 
 .submitButton:focus,
 .submitButton:hover {
-  border-width: .2rem;
-  line-height: calc(var(--submitButtonHeight) - .4rem);
+  border-width: .3rem;
+  line-height: calc(var(--submitButtonHeight) - .3rem);
 }
 
 
 @media (min-width: 600px) {
   .submitButton {
     height: var(--submitButtonDektopHeight);
-    line-height: calc(var(--submitButtonDektopHeight) + .2rem);
+    line-height: calc(var(--submitButtonDektopHeight) + 0.2rem);
     font-size: 2rem;
   }
 
   .submitButton:focus,
   .submitButton:hover {
-    border-width: .2rem;
-    line-height: var(--submitButtonDektopHeight);
+    border-width: .3rem;
+    line-height: calc(var(--submitButtonDektopHeight) - 0.3rem);
   }
 }

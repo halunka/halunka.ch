@@ -93,4 +93,8 @@ form [class$="--invalid"] {
     right: 1rem;
   }
 
+  .mailForm__send {
+    margin-top: 2rem;
+  }
+
 }
