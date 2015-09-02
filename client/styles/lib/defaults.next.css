@@ -30,15 +30,22 @@ main {
 }
 
 h1 {
-  line-height: 2.5rem;
+  line-height: 2.3rem;
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
 }
 
 h2 {
   line-height: 2rem;
   font-size: 1.5rem;
   margin: 1rem 0;
+}
+
+p {
+  padding: 1rem 0;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
 input,
@@ -93,5 +100,9 @@ button:hover {
   h1 {
     font-size: 3rem;
     line-height: 4rem;
+  }
+
+  p {
+    padding: 1rem;
   }
 }
