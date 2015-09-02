@@ -45,12 +45,12 @@ main {
 @media (min-height: 600px) AND (min-width: 1000px) {
 
   main {
-    max-width: 60vw;
+    max-width: 60vh;
   }
 
   .logo__wrapper {
-    max-width: calc(60vw - 2rem);
-    max-height: calc(60vw - 2rem);
+    max-width: calc(60vh - 2rem);
+    max-height: calc(60vh - 2rem);
   }
 
 }
