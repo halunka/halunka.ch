@@ -10,9 +10,9 @@
 .logo__wrapper {
   position: relative;
   width: calc(100vw - 4rem);
-  max-width: calc(var(--mainWidth) - 2rem);
+  max-width: calc(60vh - 2rem);
   height: calc(100vw - 4rem);
-  max-height: calc(var(--mainWidth) - 2rem);
+  max-height: calc(60vh - 2rem);
   perspective: 100px;
   margin-bottom: 2rem;
 }

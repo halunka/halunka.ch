@@ -25,7 +25,6 @@ main {
   flex-direction: column;
   margin: 0 auto;
   padding: 2rem;
-  max-width: var(--mainWidth);
   min-height: 100vh;
 }
 
@@ -94,15 +93,4 @@ textarea:focus {
 
 button:hover {
   cursor: pointer;
-}
-
-@media (min-width: 600px) {
-  h1 {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-
-  p {
-    padding: 1rem;
-  }
 }

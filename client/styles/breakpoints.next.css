@@ -1,0 +1,43 @@
+main {
+  max-width: initial;
+}
+
+@media (max-height: 950px) AND (min-width: 600px) {
+
+  main {
+    max-width: 60vh;
+  }
+
+  .logo__wrapper {
+    max-width: calc(60vh - 2rem);
+    max-height: calc(60vh - 2rem);
+  }
+
+}
+
+@media (min-width: 600px) {
+
+  h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  main {
+    max-width: 80vw;
+  }
+
+  .logo__wrapper {
+    max-width: calc(80vw - 2rem);
+    max-height: calc(80vw - 2rem);
+  }
+
+}
+
+@media (max-height: 600px) AND (min-width: 600px) {
+
+  .logo__wrapper {
+    max-width: calc(60vh - 2rem);
+    max-height: calc(60vh - 2rem);
+  }
+
+}
