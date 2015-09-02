@@ -31,7 +31,7 @@
 
 .mailForm--hidden {
   opacity: 0;
-  top: -100vh;
+  top: -100%;
 }
 
 .mailForm__title {
