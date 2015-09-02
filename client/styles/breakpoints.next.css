@@ -41,3 +41,16 @@ main {
   }
 
 }
+
+@media (min-height: 600px) AND (min-width: 1000px) {
+
+  main {
+    max-width: 60vw;
+  }
+
+  .logo__wrapper {
+    max-width: calc(60vw - 2rem);
+    max-height: calc(60vw - 2rem);
+  }
+
+}
