@@ -10,3 +10,4 @@ Session.vim
 packages/
 .demeteorized/
 Dockerfile
+settings.json
